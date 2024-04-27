@@ -77,7 +77,8 @@ const config = {
       },
     },
   },
-  plugins: [import("tailwindcss-animate")],
+  // eslint-disable-next-line no-undef
+  plugins: [require("tailwindcss-animate")],
 };
 
 export default config;

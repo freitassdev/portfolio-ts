@@ -16,6 +16,7 @@ const ProjectsSection: React.FC = () => {
             url='https://chat.michelfreitas.com/'
             github='https://github.com/freitassdev/chat-frontend'
              />
+             
         </div>
     );
 };

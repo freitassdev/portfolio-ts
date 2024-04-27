@@ -2,8 +2,15 @@ import React from 'react';
 import './card.css'
 import { Github, Link2 } from 'lucide-react';
 import { Separator } from "@/components/ui/separator"
+import CardDrawer from './CardDrawer';
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "@/components/ui/tooltip"
 
-interface CardProps {
+export interface CardProps {
     github?: string,
     url?: string,
     inDevelopment?: boolean,
@@ -17,16 +24,32 @@ const Card: React.FC<CardProps> = (props) => {
     return (
         <div className='flex flex-col gap-3 max-w-[370px]'>
             <div className="h-[230px] bg-primary-foreground max-w-[370px] rounded-xl relative overflow-hidden">
-                <img className="h-auto w-auto absolute bottom-0 left-[50%] translate-x-[-50%] rounded-t-lg transition duration-200 hover:translate-x-[-50%] hover:scale-110 hover:rotate-2"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXTb14H0pL8piAfDyR1f5Ua-m14lva9t9POQ&amp;usqp=CAU" alt="image" />
+                {/* image and drawer */}
+                <CardDrawer title={props.title} description={props.description} tech={props.tech} />
             </div>
             <div className='flex flex-col gap-1 max-w-[370px]'>
                 <div className='flex flex-row items-center gap-3'>
                     <h2 className='font-poppins font-bold text-2xl'>{props.title ?? "Em Breve."}</h2>
                     <div className="header-line" style={{ marginLeft: 0 }}></div>
-                    <a aria-label="Github Link" href={props.github ?? ""} rel="noreferrer" target="_blank"><Github /></a>
-                    <Separator orientation='vertical' />
-                    <a aria-label="Website Link" href={props.url ?? ""} rel="noreferrer" target="_blank"><Link2 /></a>
+                    <TooltipProvider>
+                        <Tooltip>
+                            <TooltipTrigger asChild>
+                                <a aria-label="Github Link" href={props.github ?? ""} rel="noreferrer" target="_blank"><Github /></a>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                                <p>Código Fonte</p>
+                            </TooltipContent>
+                        </Tooltip>
+                        <Separator orientation='vertical' />
+                        <Tooltip>
+                            <TooltipTrigger asChild>
+                                <a aria-label="Website Link" href={props.url ?? ""} rel="noreferrer" target="_blank"><Link2 /></a>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                                <p>Acessar Website</p>
+                            </TooltipContent>
+                        </Tooltip>
+                    </TooltipProvider>
                 </div>
                 <h2 className='font-poppins font-bold text-md'>{props.tech ?? "HTML - CSS - JS"}</h2>
                 <p className='font-sans font-light text-base'>{props.description ?? "em breve"}</p>
