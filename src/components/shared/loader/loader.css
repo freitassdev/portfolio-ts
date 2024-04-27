@@ -1,0 +1,61 @@
+.loader {
+    height: 100%;
+    width: 100%;
+}
+
+.open-container {
+    position: fixed;
+    z-index: 2000;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: auto;
+    margin-top: -4rem;
+}
+
+.open-one, .open-two {
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+.open-one {
+    animation: open 1.5s ease-out .15s;
+    animation-fill-mode: forwards;
+}
+
+.open-two {
+    animation: openTwo 1.5s ease-out .15s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes open {
+    0% {
+        right: 0;
+    }
+
+    50% {
+        right: 50vw;
+    }
+
+    100% {
+        right: 100vw;
+        display: none;
+    }
+}
+
+@keyframes openTwo {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 50vw;
+    }
+
+    100% {
+        left: 100vw;
+        display: none;
+    }
+}
