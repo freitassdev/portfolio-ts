@@ -15,7 +15,8 @@ const CardDrawer: React.FC<CardProps> = (props) => {
   return (
     <Drawer shouldScaleBackground>
       <DrawerTrigger>
-        <img className="h-auto w-auto absolute bottom-0 left-[50%] translate-x-[-50%] rounded-t-lg transition duration-200 hover:translate-x-[-50%] hover:scale-110 hover:rotate-2 cursor-pointer"
+        {/* pra aumentar ou diminuir a margin-top mexe no translate-y */}
+        <img className="w-[85%] bottom-0 absolute left-[50%] translate-x-[-50%] translate-y-[10%] rounded-t-lg transition duration-200 hover:translate-x-[-50%] hover:scale-110 hover:rotate-2 cursor-pointer"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXTb14H0pL8piAfDyR1f5Ua-m14lva9t9POQ&amp;usqp=CAU" alt="image" />
       </DrawerTrigger>
       <DrawerContent>

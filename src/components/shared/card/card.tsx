@@ -22,12 +22,12 @@ export interface CardProps {
 
 const Card: React.FC<CardProps> = (props) => {
     return (
-        <div className='flex flex-col gap-3 max-w-[370px]'>
-            <div className="h-[230px] bg-primary-foreground max-w-[370px] rounded-xl relative overflow-hidden">
+        <div className='flex flex-col gap-3 w-full'>
+            <div className="w-full aspect-video bg-primary-foreground rounded-xl relative overflow-hidden">
                 {/* image and drawer */}
                 <CardDrawer title={props.title} description={props.description} tech={props.tech} />
             </div>
-            <div className='flex flex-col gap-1 max-w-[370px]'>
+            <div className='flex flex-col gap-1'>
                 <div className='flex flex-row items-center gap-3'>
                     <h2 className='font-poppins font-bold text-2xl'>{props.title ?? "Em Breve."}</h2>
                     <div className="header-line" style={{ marginLeft: 0 }}></div>

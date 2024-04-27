@@ -9,14 +9,36 @@ const ProjectsSection: React.FC = () => {
                 <span className="underfont">Projetos</span>
                 <div className="header-line"></div>
             </div>
-            <Card
-            title='Chat App'
-            tech='React - TypeScript - Express - MongoDB'
-            description='Desenvolvido como uma plataforma de comunicação instantânea, semelhante ao WhatsApp, este site possibilita a troca de mensagens em tempo real de maneira eficiente e intuitiva.'
-            url='https://chat.michelfreitas.com/'
-            github='https://github.com/freitassdev/chat-frontend'
-             />
-             
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10'>
+                <Card
+                    title='Chat App'
+                    tech='React - TypeScript - Express - MongoDB'
+                    description='Desenvolvido como uma plataforma de comunicação instantânea, semelhante ao WhatsApp, este site possibilita a troca de mensagens em tempo real de maneira eficiente e intuitiva.'
+                    url='https://chat.michelfreitas.com/'
+                    github='https://github.com/freitassdev/chat-frontend'
+                />
+                <Card
+                    title='Chat App'
+                    tech='React - TypeScript - Express - MongoDB'
+                    description='Desenvolvido como uma plataforma de comunicação instantânea, semelhante ao WhatsApp, este site possibilita a troca de mensagens em tempo real de maneira eficiente e intuitiva.'
+                    url='https://chat.michelfreitas.com/'
+                    github='https://github.com/freitassdev/chat-frontend'
+                />
+                <Card
+                    title='Chat App'
+                    tech='React - TypeScript - Express - MongoDB'
+                    description='Desenvolvido como uma plataforma de comunicação instantânea, semelhante ao WhatsApp, este site possibilita a troca de mensagens em tempo real de maneira eficiente e intuitiva.'
+                    url='https://chat.michelfreitas.com/'
+                    github='https://github.com/freitassdev/chat-frontend'
+                />
+                <Card
+                    title='Chat App'
+                    tech='React - TypeScript - Express - MongoDB'
+                    description='Desenvolvido como uma plataforma de comunicação instantânea, semelhante ao WhatsApp, este site possibilita a troca de mensagens em tempo real de maneira eficiente e intuitiva.'
+                    url='https://chat.michelfreitas.com/'
+                    github='https://github.com/freitassdev/chat-frontend'
+                />
+            </div>
         </div>
     );
 };
