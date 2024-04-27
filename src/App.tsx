@@ -2,12 +2,11 @@ import { useEffect } from 'react'
 import './App.css'
 import Loader from '@/components/shared/loader/loader';
 import Navbar from '@/components/shared/navbar/navbar';
-import { HeroSection, AboutSection } from '@/components/sections';
+import { HeroSection, AboutSection, ProjectsSection } from '@/components/sections';
 function App() {
 
   useEffect(() => {
     document.body.classList.add("dark")
-    
   }, []);
 
   return (
@@ -25,8 +24,8 @@ function App() {
               <div className="about-me-section">
                 <AboutSection />
               </div>
-              <div className="projects-section">
-
+              <div className="projects-section mt-16">
+                <ProjectsSection />
               </div>
             </div>
           </div>

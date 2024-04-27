@@ -10,7 +10,7 @@ const AboutSection: React.FC = () => {
                 <span className="font-extrabold text-5xl max-lg:text-4xl dark:text-[#a7a7a7]">#</span>
             </div>
             <div className='flex flex-row justify-between max-lg:flex-col max-lg:items-start mt-6 gap-10 text-[17px] max-md:text-base'>
-                <div className='flex flex-col font-sans font-light'>
+                <div className='flex flex-col font-sans font-light text-justify'>
                     <p style={{
                         marginBlockStart: '0',
                     }}>Olá! Me chamo Michel, sou um estudante e desenvolvedor apaixonado por programação desde os 12 anos. Atualmente tenho 16 anos e moro em São Paulo, Pirituba. Estou cursando Desenvolvimento de Sistemas na Etec Jaraguá e também faço estágio como Desenvolvedor Web na empresa Focus Têxtil. Atuo no front-end e no back-end, utilizando as principais tecnologias do Node.js (como React, Express, Nest e um pouquinho de Angular) e também na programação mobile, utilizando React Native com TypeScript. Por enquanto ando estudando um pouco de C# (ou CSharp para os mais íntimos) e MySQL.</p>
