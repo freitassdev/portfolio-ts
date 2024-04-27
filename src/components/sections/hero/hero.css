@@ -12,6 +12,6 @@
     /* Tamanho das bolinhas e espaçamento */
     pointer-events: none;
     /* Impedir interação com as bolinhas */
-    z-index: -10;
+    z-index: -1;
 }
 

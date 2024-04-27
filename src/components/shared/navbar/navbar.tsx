@@ -14,7 +14,7 @@ import { Github, Twitter, Linkedin } from 'lucide-react'
 
 const Navbar: React.FC = () => {
     return (
-        <nav className='top-0 fixed h-[4.5rem] px-16 flex flex-row items-center w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'>
+        <nav className='top-0 z-10 fixed h-[4.5rem] px-16 flex flex-row items-center w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'>
             <div className="nav-content flex flex-row items-center justify-between w-full">
                 <div className="nav-logo">
                     <h1 className='font-bold text-3xl'>michelfreitas</h1>

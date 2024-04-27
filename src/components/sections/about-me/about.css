@@ -1,0 +1,10 @@
+.skill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-height: 35px;
+    padding: 7px 15px 7px 15px;
+    background-color: hsl(var(--primary-foreground));
+    border-radius: 999px;
+}

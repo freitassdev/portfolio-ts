@@ -1,13 +1,17 @@
 import React from 'react';
 import './hero.css';
+import { Button } from "@/components/ui/button"
+
 const HeroSection: React.FC = () => {
     return (
-        <div className="flex flex-col items-center justify-center gap-10 h-[80vh]">
-            <h1 className="text-4xl font-bold font-poppins">Hello, I'm John Doe</h1>
-            <p className="text-lg font-light font-sans">I'm a web developer based in New York. I have rich experience in web site design and building, also I am good at wordpress.</p>
+        <div className="flex flex-col items-center justify-center gap-8 h-[80vh] text-center p-4">
+            <p className="text-xl font-light font-sans max-lg:text-lg">👋🏼 Olá, me chamo <span className='font-medium'>Michel Freitas</span>!</p>
+            <h1 className="text-6xl font-bold font-poppins max-lg:text-5xl max-sm:text-3xl">Arquitetando o Futuro com Tecnologia e Criatividade</h1>
+            <p className="text-xl font-light font-sans max-w-[700px] max-lg:text-lg">Apresentando meu próprio portfólio como um reflexo da minha paixão por esta área. Um desenvolvedor comprometido com a arte de criar experiências únicas, tanto no Front-End quanto no Back-End. Seja bem-vindo!</p>
+
             <div className="flex gap-5">
-                <button className="btn btn-primary">Hire Me</button>
-                <button className="btn btn-secondary">Contact Me</button>
+                <Button className='text-foreground'>Contate-me</Button>
+                <Button variant="outline" className='text-foreground'>Linkedin</Button>
             </div>
         </div>
     );
