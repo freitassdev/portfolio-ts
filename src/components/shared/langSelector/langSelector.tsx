@@ -30,7 +30,7 @@ const LangSelector: React.FC = () => {
         setSelectedLang(i18n.language);
     }, [i18n.language]);
     return (
-        <div>
+        <div className='flex flex-row items-center'>
             <DropdownMenu onOpenChange={(open) => openChange(open)}>
                 <DropdownMenuTrigger>
                     <div className='flex flex-row gap-2 items-center'>
