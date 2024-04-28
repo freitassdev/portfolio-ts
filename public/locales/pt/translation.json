@@ -1,0 +1,48 @@
+{
+    "general": {
+        "close": "Fechar"
+    },
+    "sections": {
+        "hero": {
+            "hello": "Olá, me chamo",
+            "title": "Arquitetando o Futuro com Tecnologia e Criatividade",
+            "description": "Apresentando meu próprio portfólio como um reflexo da minha paixão por esta área. Um desenvolvedor comprometido com a arte de criar experiências únicas, tanto no Front-End quanto no Back-End. Seja bem-vindo!",
+            "buttons": {
+                "contact": "Contate-me",
+                "linkedin": "Linkedin"
+            }
+        },
+        "about": {
+            "title": "Sobre Mim",
+            "skillsTitle": "Minhas Habilidades",
+            "description": {
+                "part1": "Olá! Me chamo Michel, sou um estudante e desenvolvedor apaixonado por programação desde os 12 anos. Atualmente tenho 16 anos e moro em São Paulo, Pirituba. Estou cursando Desenvolvimento de Sistemas na Etec Jaraguá e também faço estágio como Desenvolvedor Web na empresa Focus Têxtil. Atuo no front-end e no back-end, utilizando as principais tecnologias do Node.js (como React, Express, Nest e um pouquinho de Angular) e também na programação mobile, utilizando React Native com TypeScript. Por enquanto ando estudando um pouco de C# (ou CSharp para os mais íntimos) e MySQL.",
+                "part2": "Saindo um pouco dessa rotina de estágio e estudos, costumo jogar videogame e vôlei, ouvir música e assistir filmes e séries (quem não gosta de um cineminha, não é mesmo? rsrs). Além disso gosto de viajar, desenvolver alguns projetos, e passear pela cidade. Estou empolgado em continuar explorando o mundo da tecnologia e ansioso para colaborar em projetos inovadores. Vamos construir algo incrível juntos!"
+            }
+        },
+        "projects": {
+            "title": "Projetos"
+        }
+    },
+    "components": {
+        "navbar": {
+            "items": {
+                "home": "INÍCIO",
+                "about": "SOBRE MIM",
+                "projects": "PROJETOS",
+                "formation": "FORMAÇÃO",
+                "carrer": "CARREIRA"
+            }
+        },
+        "langSelector": {
+            "pt": "Português",
+            "en": "Inglês"
+        },
+        "projectsCard": {
+            "chatApp": {
+                "title": "Chat App",
+                "description": "Desenvolvido como uma plataforma de comunicação instantânea, semelhante ao WhatsApp, este site possibilita a troca de mensagens em tempo real de maneira eficiente e intuitiva."
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "general": {
+        "close": "Close"
+    },
+    "sections": {
+        "hero": {
+            "hello": "Hello, my name is",
+            "title": "Architecting the Future with Technology and Creativity",
+            "description": "Introducing my own portfolio as a reflection of my passion for this field. A developer committed to the art of creating unique experiences, both in Front-End and Back-End. Welcome!",
+            "buttons": {
+                "contact": "Contact Me",
+                "linkedin": "Linkedin"
+            }
+        },
+        "about": {
+            "title": "About Me",
+            "skillsTitle": "My Skills",
+            "description": {
+                "part1": "Hello! My name is Michel, I'm a student and developer passionate about programming since I was 12 years old. Currently, I'm 16 years old and I live in São Paulo, Pirituba. I'm studying Systems Development at Etec Jaraguá and I also work as a Web Developer intern at Focus Têxtil. I work on both front-end and back-end, using the main technologies of Node.js (such as React, Express, Nest, and a little bit of Angular) and also in mobile programming, using React Native with TypeScript. For now, I'm studying some C# and MySQL.",
+                "part2": "Getting out of this routine of internship and studies, I usually play video games and volleyball, listen to music, and watch movies and series (who doesn't like a movie night, right? lol). Besides that, I like to travel, develop some projects, and walk around the city. I'm excited to continue exploring the world of technology and eager to collaborate on innovative projects. Let's build something amazing together!"
+            }
+        },
+        "projects": {
+            "title": "Projects"
+        }
+    },
+    "components": {
+        "navbar": {
+            "items": {
+                "home": "HOME",
+                "about": "ABOUT ME",
+                "projects": "PROJECTS",
+                "formation": "FORMATION",
+                "carrer": "CAREER"
+            }
+        },
+        "langSelector": {
+            "pt": "Portuguese",
+            "en": "English"
+        },
+        "projectsCard": {
+            "chatApp": {
+                "title": "Chat App",
+                "description": "Developed as an instant messaging platform, similar to WhatsApp, this website enables the exchange of messages in real-time efficiently and intuitively."
+            }
+        }
+    }
+}

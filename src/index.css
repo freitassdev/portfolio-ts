@@ -110,6 +110,29 @@ body::-webkit-scrollbar-thumb {
   background: hsl(var(--secondary)/.6);
 }
 
+body[data-scroll-locked] .app-container {
+  margin-right: 15px !important;
+}
+
+body[data-scroll-locked] .app-container::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  background-color: hsl(var(--primary));
+  z-index: 20;
+}
+
+body[data-scroll-locked] .app-container nav::after {
+  content: '';
+  position: relative;
+  margin-right: 0;
+  width: 15px;
+  height: 100%;
+}
+
 :focus-visible {
   outline: hsl(var(--primary)) auto 0px !important;
 }

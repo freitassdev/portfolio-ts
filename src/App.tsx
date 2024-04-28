@@ -3,8 +3,9 @@ import './App.css'
 import Loader from '@/components/shared/loader/loader';
 import Navbar from '@/components/shared/navbar/navbar';
 import { HeroSection, AboutSection, ProjectsSection } from '@/components/sections';
+// import { useTranslation } from 'react-i18next';
 function App() {
-
+  // const { t } = useTranslation();
   useEffect(() => {
     document.body.classList.add("dark")
   }, []);
