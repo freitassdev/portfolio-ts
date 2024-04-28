@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
                 </div>
                 {/* Mobile Nav */}
                 <div
-                    className={`fixed z-40 w-[100vw] sm:w-[75vw] left-0 top-[4.5rem] sm:border-r sm:rounded-br-xl border-b border-border bg-background overflow-hidden flex flex-col lg:hidden gap-12 origin-top duration-700 ${!toggleMenu ? "h-0" : "h-[400px]"}`}>
+                    className={`fixed z-40 w-[100vw] sm:w-[75vw] left-0 top-[4.5rem] sm:border-r sm:rounded-br-xl border-b border-border bg-background overflow-hidden flex flex-col lg:hidden gap-12 origin-top duration-700 ${!toggleMenu ? "h-0" : "h-[345px]"}`}>
                     <div className="py-4 px-4 sm:px-10">
                         <div className="flex flex-col gap-4 font-bold tracking-wider">
                             <a href="#" className="border-l-4 border-secondary text-foreground/100 transition-colors hover:text-foreground/80 lg:block font-sans font-medium capitalize">
