@@ -3,7 +3,7 @@ import './App.css'
 import Loader from '@/components/shared/loader/loader';
 import Navbar from '@/components/shared/navbar/navbar';
 import { HeroSection, AboutSection, ProjectsSection } from '@/components/sections';
-// import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react- i18next';
 function App() {
   // const { t } = useTranslation();
   useEffect(() => {
@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <div className="app-container">
-        <Loader />
+        <Loader loading />
         <Navbar />
         <div className="mt-[4.5rem]">
           <div className="hero-section mx-auto max-w-[880px]">

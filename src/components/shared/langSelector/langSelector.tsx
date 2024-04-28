@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './langSelector.css'
 import usa from '@/assets/images/usa.svg';
 import brazil from '@/assets/images/brazil.svg';
@@ -13,8 +13,16 @@ import {
 
 const LangSelector: React.FC = () => {
     const [selectedLang, setSelectedLang] = useState<string>();
+    const chevronRef = useRef<SVGSVGElement>(null); 
     const { t, i18n } = useTranslation();
 
+    const openChange = (open: boolean) => {
+        if (open && chevronRef.current) {
+            chevronRef.current.style.transform = 'rotate(180deg)';
+        } else if(chevronRef.current) {
+            chevronRef.current.style.transform = 'rotate(0deg)';
+        }
+    }
     const changeLanguage = (lng: string) => {
         i18n.changeLanguage(lng);
     };
@@ -23,11 +31,11 @@ const LangSelector: React.FC = () => {
     }, [i18n.language]);
     return (
         <div>
-            <DropdownMenu>
-                <DropdownMenuTrigger >
-                    <div className='flex flex-row gap-2 items-center '>
+            <DropdownMenu onOpenChange={(open) => openChange(open)}>
+                <DropdownMenuTrigger>
+                    <div className='flex flex-row gap-2 items-center'>
                         <img src={selectedLang === "en" ? usa : brazil} className='h-9' />
-                        <ChevronDown size={18} strokeWidth={1.5} />
+                        <ChevronDown className="transition-all" size={18} strokeWidth={1.5} ref={chevronRef} />
                     </div>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
