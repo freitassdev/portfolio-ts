@@ -11,7 +11,11 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-const LangSelector: React.FC = () => {
+interface LangSelectorProps {
+    className?: string
+}
+
+const LangSelector: React.FC<LangSelectorProps> = ({ className }) => {
     const [selectedLang, setSelectedLang] = useState<string>();
     const chevronRef = useRef<SVGSVGElement>(null); 
     const { t, i18n } = useTranslation();
@@ -30,12 +34,12 @@ const LangSelector: React.FC = () => {
         setSelectedLang(i18n.language);
     }, [i18n.language]);
     return (
-        <div className='flex flex-row items-center'>
+        <div className={`flex flex-row items-center ${className}`}>
             <DropdownMenu onOpenChange={(open) => openChange(open)}>
                 <DropdownMenuTrigger>
                     <div className='flex flex-row gap-2 items-center'>
                         <img src={selectedLang === "en" ? usa : brazil} className='h-9' />
-                        <ChevronDown className="transition-all" size={18} strokeWidth={1.5} ref={chevronRef} />
+                        <ChevronDown className="ml-[-5px] transition-all" size={18} strokeWidth={1.5} ref={chevronRef} />
                     </div>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
