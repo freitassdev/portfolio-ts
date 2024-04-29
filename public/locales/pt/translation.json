@@ -39,6 +39,11 @@
             "en": "Inglês"
         },
         "projectsCard": {
+            "component": {
+                "inDevelopment": "Em desenvolvimento",
+                "sourceCode": "Código Fonte",
+                "visitSite": "Visitar WebSite"
+            },
             "chatApp": {
                 "title": "Chat App",
                 "description": "Desenvolvido como uma plataforma de comunicação instantânea, semelhante ao WhatsApp, este site possibilita a troca de mensagens em tempo real de maneira eficiente e intuitiva."

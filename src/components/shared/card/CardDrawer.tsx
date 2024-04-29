@@ -1,5 +1,5 @@
 import * as React from "react"
-
+import { useTranslation } from 'react-i18next';
 import { Button } from "@/components/ui/button"
 import {
   Drawer,
@@ -12,6 +12,8 @@ import {
 import { CardProps } from "./card"
 
 const CardDrawer: React.FC<CardProps> = (props) => {
+  const { t } = useTranslation();
+
   return (
     <Drawer shouldScaleBackground>
       <DrawerTrigger>
@@ -42,7 +44,7 @@ const CardDrawer: React.FC<CardProps> = (props) => {
           </div>
           <DrawerFooter>
             <DrawerClose asChild>
-              <Button variant="outline">Fechar</Button>
+              <Button variant="outline">{t("general.close")}</Button>
             </DrawerClose>
           </DrawerFooter>
         </div>

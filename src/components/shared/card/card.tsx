@@ -2,6 +2,7 @@ import React from 'react';
 import './card.css'
 import { Github, Link2 } from 'lucide-react';
 import { Separator } from "@/components/ui/separator"
+import { useTranslation } from 'react-i18next';
 import CardDrawer from './CardDrawer';
 import {
     Tooltip,
@@ -21,8 +22,15 @@ export interface CardProps {
 }
 
 const Card: React.FC<CardProps> = (props) => {
+    const { t } = useTranslation();
+
     return (
         <div className='flex flex-col gap-3 w-full'>
+            {props.inDevelopment && (
+                <div className='flex flex-row items-center justify-center text-sm font-poppins absolute bg-secondary p-2 mt-[-30px] ml-4 rounded-t-sm max-h-8 '>
+                    <p>{t("components.projectsCard.component.inDevelopment")}</p>
+                </div>
+            )}
             <div className="w-full aspect-video bg-primary-foreground rounded-xl relative overflow-hidden">
                 {/* image and drawer */}
                 <CardDrawer title={props.title} description={props.description} tech={props.tech} />
@@ -37,7 +45,7 @@ const Card: React.FC<CardProps> = (props) => {
                                 <a aria-label="Github Link" href={props.github ?? ""} rel="noreferrer" target="_blank"><Github /></a>
                             </TooltipTrigger>
                             <TooltipContent>
-                                <p>Código Fonte</p>
+                                <p>{t("components.projectsCard.component.sourceCode")}</p>
                             </TooltipContent>
                         </Tooltip>
                         <Separator orientation='vertical' />
@@ -46,7 +54,7 @@ const Card: React.FC<CardProps> = (props) => {
                                 <a aria-label="Website Link" href={props.url ?? ""} rel="noreferrer" target="_blank"><Link2 /></a>
                             </TooltipTrigger>
                             <TooltipContent>
-                                <p>Acessar Website</p>
+                                <p>{t("components.projectsCard.component.visitSite")}</p>
                             </TooltipContent>
                         </Tooltip>
                     </TooltipProvider>

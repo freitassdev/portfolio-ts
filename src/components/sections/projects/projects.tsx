@@ -19,6 +19,7 @@ const ProjectsSection: React.FC = () => {
                     description={t('components.projectsCard.chatApp.description')}
                     url='https://chat.michelfreitas.com/'
                     github='https://github.com/freitassdev/chat-frontend'
+                    inDevelopment
                 />
                 <Card
                     title={t('components.projectsCard.chatApp.title')}
