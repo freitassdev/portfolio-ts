@@ -36,6 +36,8 @@
     --ring: 240 4.9% 83.9%;
 
     --radius: 0.5rem;
+
+    --topo-bg: url(assets/images/topography-white.svg);
   }
 
   .white {
@@ -70,6 +72,9 @@
     /* --input: 240 5.9% 90%; */
     --input: 240 3.7% 60.9%;
     --ring: 240 10% 3.9%;
+
+    --topo-bg: url(assets/images/topography.svg);
+
   }
 }
 
