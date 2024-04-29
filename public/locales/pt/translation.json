@@ -22,6 +22,9 @@
         },
         "projects": {
             "title": "Projetos"
+        },
+        "formation": {
+            "title": "Formação"
         }
     },
     "components": {
@@ -47,6 +50,22 @@
             "chatApp": {
                 "title": "Chat App",
                 "description": "Desenvolvido como uma plataforma de comunicação instantânea, semelhante ao WhatsApp, este site possibilita a troca de mensagens em tempo real de maneira eficiente e intuitiva."
+            }
+        },
+        "timeline": {
+            "items": {
+                "etec": {
+                    "title": "Desenvolvimento de Sistemas",
+                    "subtitle": "Etec Jaraguá - Curso técnico",
+                    "date": "2023 - atualmente",
+                    "description": "Análise e projeto de sistemas, programação web, programação mobile, segurança da informação, sistemas embarcados, design digital, banco de dados, qualidade de software, desenvolvimento de sistemas, inglês técnico."
+                },
+                "saber": {
+                    "title": "Curso Profissionalizante",
+                    "subtitle": "Saber - Aprendizagem Profissional",
+                    "date": "2023 - atualmente",
+                    "description": "Informática básica, pacote office, ética profissional, mundo do trabalho, comunicação e trabalho em equipe, noções de gestão, rotinas administrativas, marketing pessoal, empreendedorismo, inglês básico."
+                }
             }
         }
     }
