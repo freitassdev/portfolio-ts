@@ -1,5 +1,6 @@
 .topo-bg {
   width: 100%;
   height: auto;
-  background-image: var(--topo-bg)
+  background-image: var(--topo-bg);
+  background-repeat: repeat;
 }

@@ -25,6 +25,9 @@
         },
         "formation": {
             "title": "Formação"
+        },
+        "carrer": {
+            "title": "Carreira"
         }
     },
     "components": {
@@ -67,6 +70,19 @@
                     "description": "Informática básica, pacote office, ética profissional, mundo do trabalho, comunicação e trabalho em equipe, noções de gestão, rotinas administrativas, marketing pessoal, empreendedorismo, inglês básico."
                 }
             }
+        },
+        "contextMenu": {
+            "back": "Voltar",
+            "forward": "Avançar",
+            "reload": "Recarregar",
+            "inspect": {
+                "label": "Inspecionar",
+                "toastTitle": "Abrir inspecionar",
+                "toastDescription": "Para abrir o inspecionar, pressione Ctrl + Shift + I ou F12"
+            },
+            "contact": "Email de Contato",
+            "languagePt": "Português",
+            "languageEn": "Inglês"
         }
     }
 }
