@@ -3,7 +3,6 @@ import { Github, Twitter, Linkedin, BarChart } from 'lucide-react'
 import LangSelector from '@/components/shared/langSelector/langSelector';
 import { useTranslation } from 'react-i18next';
 import { Separator } from '@/components/ui/separator';
-import ThemeChanger from '@/components/shared/theme/theme';
 const Navbar: React.FC = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
     const { t } = useTranslation();
@@ -41,13 +40,8 @@ const Navbar: React.FC = () => {
                     <div className="max-sm:hidden flex flex-row justify-center items-center">
                         <a href=""><Github size={28} strokeWidth={1.6} /></a>
                     </div>
-                    <div className='flex flex-row gap-3 items-center ml-4 max-md:ml-1'>
-                        <div className='max-sm:hidden flex flex-row justify-center items-center'>
-                            <LangSelector />
-                        </div>
-                        <div className='hidden lg:flex flex-row justify-center items-center'>
-                            <ThemeChanger />
-                        </div>
+                    <div className='max-sm:hidden flex flex-row justify-center items-center'>
+                        <LangSelector />
                     </div>
 
                     <div className='lg:hidden flex flex-row justify-center items-center' onClick={() => setToggleMenu(!toggleMenu)}>
@@ -84,7 +78,6 @@ const Navbar: React.FC = () => {
 
                             <div className="flex flex-row items-center justify-center gap-6">
                                 <div className='left-4 absolute flex flex-row gap-4'>
-                                    <ThemeChanger />
                                     <LangSelector className="sm:hidden" />
                                 </div>
                                 <a href=""><Linkedin size={28} strokeWidth={1.5} /></a>
