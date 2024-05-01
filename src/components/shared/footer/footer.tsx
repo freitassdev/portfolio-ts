@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import React, { useState } from 'react';
+import React from 'react';
 import { Github, Twitter, Linkedin, Copyright, Dot } from 'lucide-react'
 import { useTranslation } from 'react-i18next';
 import { Separator } from '@/components/ui/separator';
