@@ -1,5 +1,5 @@
 import React from 'react';
-import './formation.css';
+import './formation.css'; 
 import { useTranslation } from 'react-i18next';
 import Timeline from '@/components/shared/timeline/timeline';
 const FormationSection: React.FC = () => {

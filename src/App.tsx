@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import Loader from '@/components/shared/loader/loader';
 import Navbar from '@/components/shared/navbar/navbar';
+import Footer from '@/components/shared/footer/footer';
 import { HeroSection, AboutSection, ProjectsSection, FormationSection, CarrerSection } from '@/components/sections';
 import { ArrowLeft, ArrowRight, Github, Linkedin, Mail, RotateCw, SquareMousePointer } from 'lucide-react';
 import { toast } from "sonner"
@@ -66,8 +67,9 @@ function App() {
               <div className='mt-4'>
                 <CarrerSection />
               </div>
-              <br />
-              <br />
+              <div className=''>
+                <Footer />
+              </div>
             </div>
           </div>
         </ContextMenuTrigger>
